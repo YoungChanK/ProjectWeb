@@ -1,1 +1,288 @@
 @charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+/* 헤더영역 */
+header{
+    width: 1980px;
+    height: 80px;
+    display: flex;
+    padding: 0 0px;
+    margin: 0 auto;
+    background-color: white;
+    /* 메뉴바 상단고정 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+/* 헤더 로고 */
+header>figure img{
+    width: 140px;
+    height: 80px;
+    margin-right: 30px;
+    margin-left: 200px;
+    
+}
+
+/* 헤더 메뉴 */
+header>nav{
+    width: 600px;
+    display: inline-block;
+    margin: auto 0;
+}
+header>nav>ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+header>nav>ul li>a{
+    text-decoration:none;
+    color: #000;
+    font-size: 14px;
+   
+}
+
+/* 메인영역 */
+
+/* 메인이미지 */
+main{
+    padding-bottom: 100px;
+}
+main>figure>img{
+    width: 1920px;
+   height: 860px;
+   /* 태그사이 공백 없애기 위해 블록처리 */
+   display: block;
+   margin: 0 auto;
+}
+
+/* 메인이미지 밑 설명 */
+main>div#mainDiv1{
+    height: 300px;
+    background: #19254d;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 1920px;
+    margin: 0 auto;
+}
+main>div#mainDiv1 p{
+    margin: auto 0;
+}
+
+main>div#mainDiv1>p#mainDivP1{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 50px;
+}
+main>div#mainDiv1>p#mainDivP2{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+/* 사진 3개들어간 메인영역 */
+main>div#mainDiv2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 200px;
+    height: auto;
+  
+}
+main>div#mainDiv2>div#mainDiv2_cover{
+    width: 1480px;
+    justify-content: space-around;
+    display: flex;
+}
+/* 이미지 크기 할당 */
+main>div#mainDiv2 div figure img{
+    display: block;
+    width: 336px;
+    height: 174px;
+
+}
+/* div안에 텍스트  */
+main>div#mainDiv2 div p.mainDiv2_2_P1{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+main>div#mainDiv2 div p.mainDiv2_2_P2{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+}
+
+/* 라인 */
+div.line{
+    width: 100%;
+    padding: 0 30px;
+    height: 1px;
+    margin: 200px auto;
+    display: block;
+    background-color: #868b9c;
+    opacity: 0.3;
+}
+
+main>div#mainDiv3{
+    margin: 0 auto;
+    width: 100%;
+}
+
+main>div#mainDiv3>div#mainDiv3_cover{
+    margin: 0 auto;
+    width: 1330px;
+}
+main>div#mainDiv3>div#mainDiv3_cover>p#mainDiv3_name{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+main>div#mainDiv3>div#mainDiv3_cover>nav>ul{
+    display: flex;
+    margin-bottom: 30px;
+}
+main>div#mainDiv3>div#mainDiv3_cover>nav>ul li>a{
+    text-decoration:none;
+    color: #9da0ae;
+    margin-right: 30px;
+}
+main>div#mainDiv3>div#mainDiv3_cover>nav>ul p{
+    margin-right: 30px;
+    
+}
+
+main>div#mainDiv3>div#mainDiv3_cover>div#mainDiv3_main>div.mainDiv3_0{
+    margin: 100px auto;
+    position: relative;
+    display: flex;
+}
+
+main>div#mainDiv3>div#mainDiv3_cover>div#mainDiv3_main>div.mainDiv3_0>i{
+    position: absolute;
+    display: block;
+    top: 20%;
+    font-size: 50px;
+}
+main>div#mainDiv3>div#mainDiv3_cover>div#mainDiv3_main>div.mainDiv3_0>i.fa-angle-right{
+    right: 0;
+    top: 20%;
+}
+
+
+/* 메인 4번쨰 */
+div#mainDiv4{
+    width: 100%;
+    height: 800px;
+    background-color:#19254d; 
+    color: white;
+}
+div#mainDiv4_1{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    padding-top: 100px;
+}
+div#mainDiv4_1 i{
+    font-size: 50px;
+    margin-top: 300px;
+}
+div#mainDiv4_cover{
+    display: flex;
+    width: 1300px;
+    height: 800px;
+    margin: 0 auto;
+}
+div#mainDiv4_1_1{
+    width: 300px;
+    height: 600px;
+    position: relative;
+}
+div#mainDiv4_2{
+    margin-top: 300px;
+}
+p#mainDiv4_2_P1{
+    font-size: 50px;
+    width: 555px;
+    height: 74px;
+}
+
+div#mainDiv4>div>div>div#mainDiv4_1_1 figure{
+    width: 300px;
+    height: 600px;
+    display: block;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+    position: absolute;
+  
+    
+}
+div#mainDiv4>div>div>div#mainDiv4_1_1 figure>img{
+
+    width: 250px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+/* 메인5번째 */
+div#mainDiv5{
+    width: 100%;
+    height: 300px;
+}
+div#mainDiv5_cover{
+    width: 1280px;
+    height: auto;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+p#mainDiv5_P1{
+    font-size: 50px;
+    margin: 50px auto;
+}
+div.mainDiv5_0{
+    display: flex;
+    
+    margin: 30px auto;
+
+}
+div.mainDiv5_0 i{
+    font-size: 20px;
+    width: 20px;
+}
+p.mainDiv5_0_P1{
+    margin: 0 30px;
+    width: 150px;
+}
+/* footer  */
+div#footerDiv1{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+}
+div#footerDiv1_cover{
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+ul#footerUl1{
+    display: flex;
+}
+ul#footerUl1 li{
+    margin-right: 10px;
+
+}
+ul#footerUl1 li a{
+    text-decoration:none;
+    color: #000;
+}

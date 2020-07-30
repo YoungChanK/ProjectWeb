@@ -97,6 +97,7 @@ main>div#mainDiv2>div#mainDiv2_cover{
     width: 1480px;
     justify-content: space-around;
     display: flex;
+   
 }
 /* 이미지 크기 할당 */
 main>div#mainDiv2 div figure img{
@@ -129,6 +130,7 @@ div.line{
     opacity: 0.3;
 }
 
+/* 3번째 메인 */
 main>div#mainDiv3{
     margin: 0 auto;
     width: 100%;
@@ -157,10 +159,64 @@ main>div#mainDiv3>div#mainDiv3_cover>nav>ul p{
     
 }
 
-main>div#mainDiv3>div#mainDiv3_cover>div#mainDiv3_main>div.mainDiv3_0{
+/* 3번째 메인 스크립트 부분 */
+div#mainDiv3_cover{
+    width: 1280px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+div#mainDiv3_main{
+    width: 5120px;
+    height: 360px;
+   
+    margin: 100px 0;
+    display: flex;
+    position: absolute;
+    left: 0;
+
+}
+div.mainDiv3_1_0{
+    width: 280px;
+    
+}
+
+
+div.mainDiv3_1_0>p.mainDiv3_P1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+div.mainDiv3_1_0>p.mainDiv3_P2{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #868b9c;
+}
+div.mainDiv3_1_0>nav>ul>li{
+    margin: 10px 0;
+}
+div.mainDiv3_0{
+    display: flex;
+    width: 1280px;
+    height: 360px;
+    background: white;
+    
+    
+}
+div.mainDiv3_0 i{
+    font-size: 40px;
+    margin: 100px 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* main>div#mainDiv3>div#mainDiv3_cover>div#mainDiv3_main>div.mainDiv3_0{
     margin: 100px auto;
     position: relative;
     display: flex;
+    width: 1280px;
+    
 }
 
 main>div#mainDiv3>div#mainDiv3_cover>div#mainDiv3_main>div.mainDiv3_0>i{
@@ -172,7 +228,7 @@ main>div#mainDiv3>div#mainDiv3_cover>div#mainDiv3_main>div.mainDiv3_0>i{
 main>div#mainDiv3>div#mainDiv3_cover>div#mainDiv3_main>div.mainDiv3_0>i.fa-angle-right{
     right: 0;
     top: 20%;
-}
+} */
 
 
 /* 메인 4번쨰 */
@@ -285,4 +341,13 @@ ul#footerUl1 li{
 ul#footerUl1 li a{
     text-decoration:none;
     color: #000;
+}
+
+
+/* 스크립트 추가 css */
+.next{
+    left: 1280px;
+}
+.back{
+    left: -1280px;
 }

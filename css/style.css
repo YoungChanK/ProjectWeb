@@ -136,10 +136,7 @@ main>div#mainDiv3{
     width: 100%;
 }
 
-main>div#mainDiv3>div#mainDiv3_cover{
-    margin: 0 auto;
-    width: 1330px;
-}
+
 main>div#mainDiv3>div#mainDiv3_cover>p#mainDiv3_name{
     font-size: 36px;
     font-weight: bold;
@@ -165,15 +162,16 @@ div#mainDiv3_cover{
     height: 600px;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
 }
-div#mainDiv3_main{
+#mainDiv3_main{
     width: 5120px;
     height: 360px;
-   
+    left: 0;
     margin: 100px 0;
     display: flex;
     position: absolute;
-    left: 0;
+  
 
 }
 div.mainDiv3_1_0{
@@ -349,5 +347,8 @@ ul#footerUl1 li a{
     left: 1280px;
 }
 .back{
+    left: -1280px;
+}
+.show{
     left: -1280px;
 }
